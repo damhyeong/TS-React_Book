@@ -1,0 +1,22 @@
+import React from "react";
+
+interface IFace{
+    name? : string,
+    children : string,
+}
+
+const MyComponent3_5 : React.FC<IFace> = ({name, children} : IFace) => {
+    return(
+        <div>
+            안녕하세요, 제 이름은 {name}입니다.<br/>
+            children 값은 {children}
+            입니다.
+        </div>
+    );
+};
+
+MyComponent3_5.defaultProps = {
+    name : '기본 이름',
+};
+
+export default MyComponent3_5;
