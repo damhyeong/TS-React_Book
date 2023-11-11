@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import TodoTemplate from "../TodoTemplate/TodoTemplate10_3";
 import TodoInsert from "../TodoInsert/TodoInsert10_1";
-import TodoList from "../TodoList/TodoList10_1";
+import TodoList from "../TodoList/TodoList10_2";
 
 interface todoFace{
     id : number;
@@ -19,7 +19,7 @@ const App10_5 = () => {
     return (
         <TodoTemplate>
             <TodoInsert/>
-            <TodoList todos={{todos}}/>
+            <TodoList todos={todos}/>
         </TodoTemplate>
     )
 }
