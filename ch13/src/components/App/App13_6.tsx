@@ -1,6 +1,6 @@
 import React from "react";
 import {Routes, Route} from "react-router-dom";
-import Layout from "../Layout/Layout13_1";
+import Layout from "../Layout/Layout13_2";
 import Home from "../pages/Home/Home13_4";
 import About from "../pages/About/About13_3";
 import Profile from "../pages/Profile/Profile13_1";
@@ -21,3 +21,4 @@ const App13_6 = () => {
         </Routes>
     )
 }
+export default App13_6;
