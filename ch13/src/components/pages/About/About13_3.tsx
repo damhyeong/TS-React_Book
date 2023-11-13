@@ -10,7 +10,7 @@ const About13_3 = () => {
         setSearchParams({mode, detail : detail === 'true' ? 'false' : 'true'});
     }
     const onIncreaseMode = () => {
-        const nextMode = (mode === null || NaN) ? '1' : (parseInt(mode) + 1).toString();
+        const nextMode = (typeof mode !== typeof detail) ? '1' : (parseInt(mode) + 1).toString()!;
         setSearchParams({mode : nextMode, detail});
     }
     return (

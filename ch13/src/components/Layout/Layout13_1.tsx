@@ -13,3 +13,4 @@ const Layout13_1 = () => {
         </div>
     )
 }
+export default Layout13_1;
